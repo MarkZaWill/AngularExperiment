@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Client } from '../shared/models/client.model';
 import { take } from 'rxjs/operators';
-import { BudgetService } from '../shared/services/budget.service';
 import { Budget } from '../shared/models/budget.model';
+import { Client } from '../shared/models/client.model';
+import { BudgetService } from '../shared/services/budget.service';
 
 @Component({
     selector: 'app-budget',

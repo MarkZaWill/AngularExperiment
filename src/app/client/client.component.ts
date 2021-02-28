@@ -1,7 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { take } from 'rxjs/operators';
 import { Client } from '../shared/models/client.model';
 import { ClientService } from '../shared/services/client.service';
-import { take } from 'rxjs/operators';
 
 @Component({
     selector: 'app-client-list',

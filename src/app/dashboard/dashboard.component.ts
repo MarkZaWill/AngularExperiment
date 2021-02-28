@@ -1,12 +1,12 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { Client } from '../shared/models/client.model';
+import { Component, ViewChild } from '@angular/core';
 import { BudgetComponent } from '../budget/budget.component';
+import { Client } from '../shared/models/client.model';
 
 @Component({
     selector: 'app-dashboard',
     templateUrl: './dashboard.component.html'
-    //   styleUrls: ['./app.component.scss']
 })
+
 export class DashboardComponent {
 
     clientList: Client[] = [];
