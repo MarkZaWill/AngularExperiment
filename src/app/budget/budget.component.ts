@@ -1,5 +1,4 @@
-import { Component, EventEmitter, Input, OnInit } from '@angular/core';
-import { CurrencyPipe } from '@angular/common'
+import { Component, Input, OnInit } from '@angular/core';
 import { Client } from '../shared/models/client.model';
 import { take } from 'rxjs/operators';
 import { BudgetService } from '../shared/services/budget.service';
@@ -14,10 +13,13 @@ export class BudgetComponent implements OnInit {
 
     public budgetData: Budget;
 
+    // for displaying cost vs cost over time.
     public cost = 0;
     public totalCost = 0;
+
     public overBudget = false;
     public withinBudget = false;
+
     private _clientData: Client[];
     @Input() set clientData(data) {
         this._clientData = data;
