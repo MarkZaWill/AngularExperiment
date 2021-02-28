@@ -1,0 +1,9 @@
+<div>Current Budget: {{budgetData.expectedAmount | currency:'USD'}} - {{budgetData.maximumAmount | currency:'USD' }} for {{budgetData.expectedTime}} hours. </div>
+<div [ngClass]="getStyle()">Current Cost: {{cost | currency:'USD'}} /hour  or {{totalCost | currency:'USD'}}</div>
+<div *ngIf="overBudget">
+    <strong class="addRed">This amount is over your maximum budget</strong>
+</div>
+
+<div *ngIf="withinBudget">
+    <strong class="addYellow">This amount is above your expected budget but below your maximum budget</strong>
+</div>
